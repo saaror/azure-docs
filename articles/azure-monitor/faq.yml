@@ -1092,9 +1092,9 @@ sections:
            *AKS enabled with Azure Active Directory (Azure AD) SAML-based single sign-on
            *AKS enabled with Kubernetes RBAC authorization
             **AKS configured with the cluster role binding clusterMonitoringUser
-          At minimum, we recommend assigning one of the following roles **Azure Kubernetes Service Cluster Monitoring User**, **Azure Kubernetes Service Cluster User Role**, or **Monitoring Reader**.
+          At a minimum, we recommend assigning the following role **Monitoring Reader**.
           
-          For [Azure Arc-enabled Kubernetes clusters](https://learn.microsoft.com/azure/azure-arc/kubernetes/overview), we recommend **Azure Arc Enabled Kubernetes Cluster User Role** or **Monitoring Reader**.
+          For [Azure Arc-enabled Kubernetes clusters](https://learn.microsoft.com/azure/azure-arc/kubernetes/overview), we also recommend **Monitoring Reader** role.
 
          You can enable these roles through Azure Portal or CLI. [Learn more for cluster admins on role assignment](https://learn.microsoft.com/azure/aks/concepts-identity)
     
