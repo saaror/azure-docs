@@ -1096,7 +1096,9 @@ sections:
           
           For [Azure Arc-enabled Kubernetes clusters](https://learn.microsoft.com/azure/azure-arc/kubernetes/overview), we also recommend **Monitoring Reader** role.
 
-         You can enable these roles through Azure Portal or CLI. [Learn more for cluster admins on role assignment](https://learn.microsoft.com/azure/aks/concepts-identity)
+         You can enable these roles through Azure Portal or CLI. Learn how to assign these roles for AKS [here.](https://learn.microsoft.com/azure/aks/control-kubeconfig-access#assign-role-permissions-to-a-user-or-group) & Learn more for Azure Arc for Kubernetes [here.](https://learn.microsoft.com/azure/azure-arc/kubernetes/azure-rbac?tabs=AzureCLI%2Ckubernetes-latest#enable-azure-rbac-on-the-cluster)
+         
+         [Learn more for cluster admins on role assignment](https://learn.microsoft.com/azure/aks/concepts-identity)
     
       - question: |
           What does "Other processes" represent under the Node view?
