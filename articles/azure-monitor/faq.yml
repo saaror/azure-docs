@@ -1085,15 +1085,18 @@ sections:
         answer: |
          Container Insights has historically allowed users to access the Azure portal experience based on the access permission of the Log Analytics workspace.
 
-         Container Insights now checks cluster level permission to provide access to the Azure portal experience. It is recommended for users to get atleast basic read-only cluster level access through their cluster admin.
+         Container Insights now checks cluster-level permission to provide access to the Azure portal experience. It is recommended for users to get atleast basic read-only cluster level access through their cluster admin.
 
-          Cluster admin would need to follow different steps based on the following cluster types
+         For the following cluster types
            *AKS without Kubernetes role-based access control (RBAC) authorization enabled
+           *AKS enabled with Azure Active Directory (Azure AD) SAML-based single sign-on
            *AKS enabled with Kubernetes RBAC authorization
             **AKS configured with the cluster role binding clusterMonitoringUser
-          *AKS enabled with Azure Active Directory (Azure AD) SAML-based single sign-on
+          At minimum, we recommend assigning one of the following roles **Azure Kubernetes Service Cluster Monitoring User**, **Azure Kubernetes Service Cluster User Role**, or **Monitoring Reader**.
+          
+          For [Azure Arc-enabled Kubernetes clusters](https://learn.microsoft.com/azure/azure-arc/kubernetes/overview), we recommend **Azure Arc Enabled Kubernetes Cluster User Role** or **Monitoring Reader**.
 
-          [Learn more for cluster admins on role assignment](https://learn.microsoft.com/azure/aks/concepts-identity)
+         You can enable these roles through Azure Portal or CLI. [Learn more for cluster admins on role assignment](https://learn.microsoft.com/azure/aks/concepts-identity)
     
       - question: |
           What does "Other processes" represent under the Node view?
